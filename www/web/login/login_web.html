@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>Web app Login/Registration</title>
+    <link rel="stylesheet" type="text/css" href="login_web.css">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</html>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="cards-container">
+        <svg class="bg-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+            <path fill="#currentColor"
+                d="M1004,1202.53V11.09h0c-126.86-36-252,25.15-292.3,46.42-46.77,24.66-119.09,76.53-209.21,76.53-.16,0-.32,0-.48,0s-.32,0-.48,0c-90.12,0-162.44-51.87-209.21-76.53C252,36.25,126.87-24.86,0,11.1H0V1202.53c0,298.35,221.3,471.75,501.31,472.24h1.38C782.7,1674.28,1004,1500.88,1004,1202.53Z" />
+        </svg>
+        <div class="card-0">
+            <svg class="bg-front-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+                <path fill="#currentColor"
+                    d="M1004,80.57C1004,33.33,993.36,0,917.36,0,812.29,0,712.19,57.52,712.19,57.52,665.42,82.18,593.1,134.06,503,134.06l-.48,0h0v0H502v0h0l-.48,0c-90.12,0-162.44-51.88-209.21-76.54,0,0-100.1-57.52-205.17-57.52C11.14,0,.5,33.33.5,80.57s-.5,1122-.5,1122c0,298.35,221.3,471.75,501.31,472.24h1.88c280-.49,501.31-173.89,501.31-472.24C1004.5,1202.53,1004,127.82,1004,80.57Z" />
+            </svg>
+            <div class="text-container">
+                <label for="uname"><b>Usuario</b></label>
+                <input type="text" placeholder="Usuario" name="uname" required>
+            
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Contraseña" name="psw" required>
+            
+                <button id="loginBtn" type="submit">Login</button>
+                <button id="registerBtn" type="submit">Register</button>
+            
+                <div id="registerOptions" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="login_web.js"></script>
+
+</body>
+</html>

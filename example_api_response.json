@@ -1,0 +1,364 @@
+{
+    "matches": [
+        {
+            "id": "271567832",
+            "offset": 2.2199260250000004,
+            "channel": "0",
+            "timeskew": -0.0011238456,
+            "frequencyskew": 0.00024163723
+        },
+        {
+            "id": "228714213",
+            "offset": 2.124595458,
+            "channel": "0",
+            "timeskew": -0.0007727742,
+            "frequencyskew": 0.00004029274
+        },
+        {
+            "id": "48505807",
+            "offset": 21.258058593,
+            "channel": "0",
+            "timeskew": -0.0021508336,
+            "frequencyskew": 0.00096702576
+        }
+    ],
+    "timestamp": 1636371140302,
+    "timezone": "America/Chicago",
+    "tagid": "d98e0a18-5fa4-4011-8ac7-ee9fb019a49e",
+    "track": {
+        "layout": "5",
+        "type": "MUSIC",
+        "key": "5167035",
+        "title": "Clint Eastwood",
+        "subtitle": "Gorillaz",
+        "images": {
+            "background": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/7e/45/a8/7e45a8e5-8f28-9bbd-f6d0-9524dba7a9fe/pr_source.png/800x800cc.jpg",
+            "coverart": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/5b/8d/47/5b8d47da-71ea-93ab-dffc-733f11332659/825646290703.jpg/400x400cc.jpg",
+            "coverarthq": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/5b/8d/47/5b8d47da-71ea-93ab-dffc-733f11332659/825646290703.jpg/400x400cc.jpg",
+            "joecolor": "b:ffffffp:040705s:172b18t:363837q:455546"
+        },
+        "share": {
+            "subject": "Clint Eastwood - Gorillaz",
+            "text": "I used Shazam to discover Clint Eastwood by Gorillaz.",
+            "href": "https://www.shazam.com/track/5167035/clint-eastwood",
+            "image": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/5b/8d/47/5b8d47da-71ea-93ab-dffc-733f11332659/825646290703.jpg/400x400cc.jpg",
+            "twitter": "I used @Shazam to discover Clint Eastwood by Gorillaz.",
+            "html": "https://www.shazam.com/snippets/email-share/5167035?lang=en-US&country=US",
+            "avatar": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/7e/45/a8/7e45a8e5-8f28-9bbd-f6d0-9524dba7a9fe/pr_source.png/800x800cc.jpg",
+            "snapchat": "https://www.shazam.com/partner/sc/track/5167035"
+        },
+        "hub": {
+            "type": "APPLEMUSIC",
+            "image": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic_{scalefactor}.png",
+            "actions": [
+                {
+                    "name": "apple",
+                    "type": "applemusicplay",
+                    "id": "850576665"
+                },
+                {
+                    "name": "apple",
+                    "type": "uri",
+                    "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/90/22/95/902295fa-d5e5-4ea9-dfd6-26a5417d42b0/mzaf_13068135983766007631.plus.aac.ep.m4a"
+                }
+            ],
+            "options": [
+                {
+                    "caption": "OPEN",
+                    "actions": [
+                        {
+                            "name": "hub:applemusic:deeplink",
+                            "type": "applemusicopen",
+                            "uri": "https://music.apple.com/us/album/clint-eastwood/850576570?i=850576665&mttnagencyid=769459046716559743&mttnsiteid=125115&mttn3pid=a_custom_779816081798873874&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+                        },
+                        {
+                            "name": "hub:applemusic:deeplink",
+                            "type": "uri",
+                            "uri": "https://music.apple.com/us/album/clint-eastwood/850576570?i=850576665&mttnagencyid=769459046716559743&mttnsiteid=125115&mttn3pid=a_custom_779816081798873874&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+                        }
+                    ],
+                    "beacondata": {
+                        "type": "open",
+                        "providername": "applemusic"
+                    },
+                    "image": "https://images.shazam.com/static/icons/hub/ios/v5/overflow-open-option_{scalefactor}.png",
+                    "type": "open",
+                    "listcaption": "Open in Apple Music",
+                    "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/applemusic-overflow_{scalefactor}.png",
+                    "colouroverflowimage": false,
+                    "providername": "applemusic"
+                },
+                {
+                    "caption": "BUY",
+                    "actions": [
+                        {
+                            "type": "uri",
+                            "uri": "https://itunes.apple.com/us/album/clint-eastwood/850576570?i=850576665&mttnagencyid=769459046716559743&mttnsiteid=125115&mttn3pid=a_custom_779816081798873874&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=itunes&itsct=Shazam_ios"
+                        }
+                    ],
+                    "beacondata": {
+                        "type": "buy",
+                        "providername": "itunes"
+                    },
+                    "image": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+                    "type": "buy",
+                    "listcaption": "Buy on iTunes",
+                    "overflowimage": "https://images.shazam.com/static/icons/hub/ios/v5/itunes-overflow-buy_{scalefactor}.png",
+                    "colouroverflowimage": false,
+                    "providername": "itunes"
+                }
+            ],
+            "providers": [
+                {
+                    "caption": "Open in Spotify",
+                    "images": {
+                        "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/spotify-overflow_{scalefactor}.png",
+                        "default": "https://images.shazam.com/static/icons/hub/ios/v5/spotify_{scalefactor}.png"
+                    },
+                    "actions": [
+                        {
+                            "name": "hub:spotify:searchdeeplink",
+                            "type": "uri",
+                            "uri": "spotify:search:Clint%20Eastwood%20Gorillaz"
+                        }
+                    ],
+                    "type": "SPOTIFY"
+                },
+                {
+                    "caption": "Open in Deezer",
+                    "images": {
+                        "overflow": "https://images.shazam.com/static/icons/hub/ios/v5/deezer-overflow_{scalefactor}.png",
+                        "default": "https://images.shazam.com/static/icons/hub/ios/v5/deezer_{scalefactor}.png"
+                    },
+                    "actions": [
+                        {
+                            "name": "hub:deezer:searchdeeplink",
+                            "type": "uri",
+                            "uri": "deezer-query://www.deezer.com/play?query=%7Btrack%3A%27Clint+Eastwood%27%20artist%3A%27Gorillaz%27%7D"
+                        }
+                    ],
+                    "type": "DEEZER"
+                }
+            ],
+            "explicit": true,
+            "displayname": "APPLE MUSIC"
+        },
+        "url": "https://www.shazam.com/track/5167035/clint-eastwood",
+        "artists": [
+            {
+                "id": "352573",
+                "adamid": "567072"
+            }
+        ],
+        "isrc": "GBAYE1400468",
+        "genres": {
+            "primary": "Alternative"
+        },
+        "urlparams": {
+            "{tracktitle}": "Clint+Eastwood",
+            "{trackartist}": "Gorillaz"
+        },
+        "myshazam": {
+            "apple": {
+                "actions": [
+                    {
+                        "name": "myshazam:apple",
+                        "type": "uri",
+                        "uri": "https://music.apple.com/us/album/clint-eastwood/850576570?i=850576665&mttnagencyid=769459046716559743&mttnsiteid=125115&mttn3pid=a_custom_779816081798873874&mttnsub1=Shazam_ios&mttnsub2=5348615A-616D-3235-3830-44754D6D5973&itscg=30201&app=music&itsct=Shazam_ios"
+                    }
+                ]
+            }
+        },
+        "albumadamid": "850576570",
+        "sections": [
+            {
+                "type": "SONG",
+                "metapages": [
+                    {
+                        "image": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/7e/45/a8/7e45a8e5-8f28-9bbd-f6d0-9524dba7a9fe/pr_source.png/800x800cc.jpg",
+                        "caption": "Gorillaz"
+                    },
+                    {
+                        "image": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/5b/8d/47/5b8d47da-71ea-93ab-dffc-733f11332659/825646290703.jpg/400x400cc.jpg",
+                        "caption": "Clint Eastwood"
+                    }
+                ],
+                "tabname": "Song",
+                "metadata": [
+                    {
+                        "title": "Album",
+                        "text": "Gorillaz"
+                    },
+                    {
+                        "title": "Label",
+                        "text": "Parlophone UK"
+                    },
+                    {
+                        "title": "Released",
+                        "text": "2001"
+                    }
+                ]
+            },
+            {
+                "type": "LYRICS",
+                "text": [
+                    "I ain't happy, I'm feeling glad",
+                    "I got sunshine in a bag",
+                    "I'm useless but not for long",
+                    "The future is coming on",
+                    "",
+                    "I ain't happy, I'm feeling glad",
+                    "I got sunshine in a bag",
+                    "I'm useless but not for long",
+                    "The future is coming on",
+                    "It's coming on, it's coming on",
+                    "It's coming on, it's coming on",
+                    "",
+                    "Finally someone let me out of my cage",
+                    "Now time for me is nothin' 'cos I'm counting no age",
+                    "Now I couldn't be there now you shouldn't be scared",
+                    "I'm good at repairs and I'm under each snare",
+                    "",
+                    "Intangible (Ah y'all), bet you didn't think so",
+                    "I command you to, panoramic view (You)",
+                    "Look I'll make it all manageable",
+                    "Pick and choose, sit and lose",
+                    "All you different crews",
+                    "Chicks and dudes, who you think is really kicking tunes",
+                    "",
+                    "Picture you getting down and I'll picture too",
+                    "Like you lit the fuse",
+                    "You think it's fictional, mystical - maybe",
+                    "Spiritual hero who appears on you to clear your view",
+                    "When you're too crazy",
+                    "",
+                    "Lifeless to those a definition for what life is",
+                    "Priceless to you because I put ya on the hype shift",
+                    "Did ya like it?",
+                    "Gut smokin' righteous but one talkin' psychic",
+                    "Among knows possess you with one though",
+                    "",
+                    "I ain't happy, I'm feeling glad",
+                    "I got sunshine in a bag",
+                    "I'm useless but not for long",
+                    "The future is coming on",
+                    "",
+                    "I ain't happy, I'm feeling glad",
+                    "I got sunshine in a bag",
+                    "I'm useless but not for long",
+                    "The future (That's right) is coming on",
+                    "It's coming on, it's coming on, it's coming on, it's coming on",
+                    "",
+                    "The essence, the basics without it you make it",
+                    "Allow me to make this child like in nature",
+                    "Rhythm you have it or you don't",
+                    "That's a fallacy, I'm in them",
+                    "Every spiralling tree, every child of peace",
+                    "Every cloud I see you see with your eyes",
+                    "",
+                    "I see destruction and demise",
+                    "Corruption in the skies",
+                    "From this fucking enterprise that I'm sucked into your lies",
+                    "The Russell that is muscles",
+                    "But percussion he provides",
+                    "",
+                    "For me I say God, y'all can see me now",
+                    "'Cos you don't see with your eye",
+                    "You perceive with your mind",
+                    "That's the end of it",
+                    "So I'mma stick around with Russ and be a mentor",
+                    "",
+                    "Bust a few rounds on motherfuckers",
+                    "Remember what the thought is",
+                    "I brought all this so you can survive when law is lawless (Right here)",
+                    "Fearless, sensations that you thought was dead",
+                    "No squealing, remember that it's all in your head",
+                    "",
+                    "I ain't happy, I'm feeling glad",
+                    "I got sunshine in a bag",
+                    "I'm useless but not for long",
+                    "The future is coming on",
+                    "",
+                    "I ain't happy, I'm feeling glad",
+                    "I got sunshine in a bag",
+                    "I'm useless but not for long",
+                    "My future is coming on",
+                    "It's coming on, it's coming on, it's coming on, it's coming on",
+                    "",
+                    "My future",
+                    "It's coming on, it's coming on, it's coming on",
+                    "It's coming on, it's coming on, my future",
+                    "It's coming on, it's coming on, it's coming on",
+                    "It's coming on, it's coming on, my future",
+                    "It's coming on, it's coming on, it's coming on",
+                    "",
+                    "My future",
+                    "It's coming on, it's coming on, it's coming on",
+                    "My future",
+                    "It's coming on, it's coming on, it's coming on",
+                    "My future"
+                ],
+                "footer": "Writer(s): Damon Albarn, Teron Delvon Jones, Murdoc Niccals\nLyrics powered by www.musixmatch.com",
+                "tabname": "Lyrics",
+                "beacondata": {
+                    "lyricsid": "19915415",
+                    "providername": "musixmatch",
+                    "commontrackid": "1149210"
+                }
+            },
+            {
+                "type": "VIDEO",
+                "tabname": "Video",
+                "youtubeurl": {
+                    "caption": "Gorillaz - Clint Eastwood (Official Video)",
+                    "image": {
+                        "dimensions": {
+                            "width": 1280,
+                            "height": 720
+                        },
+                        "url": "https://i.ytimg.com/vi/1V_xRb0x9aw/maxresdefault.jpg"
+                    },
+                    "actions": [
+                        {
+                            "name": "video:youtube",
+                            "type": "webview",
+                            "share": {
+                                "subject": "Clint Eastwood - Gorillaz",
+                                "text": "I used Shazam to discover Clint Eastwood by Gorillaz.",
+                                "href": "https://www.shazam.com/track/5167035/clint-eastwood",
+                                "image": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/5b/8d/47/5b8d47da-71ea-93ab-dffc-733f11332659/825646290703.jpg/400x400cc.jpg",
+                                "twitter": "I used @Shazam to discover Clint Eastwood by Gorillaz.",
+                                "html": "https://www.shazam.com/snippets/email-share/5167035?lang=-&country=US",
+                                "avatar": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/7e/45/a8/7e45a8e5-8f28-9bbd-f6d0-9524dba7a9fe/pr_source.png/800x800cc.jpg",
+                                "snapchat": "https://www.shazam.com/partner/sc/track/5167035"
+                            },
+                            "uri": "https://youtu.be/1V_xRb0x9aw?autoplay=1"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ARTIST",
+                "avatar": "https://is4-ssl.mzstatic.com/image/thumb/Features115/v4/7e/45/a8/7e45a8e5-8f28-9bbd-f6d0-9524dba7a9fe/pr_source.png/800x800cc.jpg",
+                "id": "352573",
+                "name": "Gorillaz",
+                "verified": false,
+                "actions": [
+                    {
+                        "type": "artistposts",
+                        "id": "352573"
+                    },
+                    {
+                        "type": "artist",
+                        "id": "352573"
+                    }
+                ],
+                "tabname": "Artist"
+            },
+            {
+                "type": "RELATED",
+                "tabname": "Related"
+            }
+        ]
+    }
+}

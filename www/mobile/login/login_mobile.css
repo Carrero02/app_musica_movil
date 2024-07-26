@@ -1,0 +1,135 @@
+:root {
+    --outer-bg-color: #ffffff;
+    --inner-bg-color: #000000;
+    --inner-bg-width: 85%;
+    --inner-bg-height: 85%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--inner-bg-color);
+    width: 100%;
+    min-height: 100svh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;   /* Prevent horizontal scroll */
+}
+
+input[type=text], input[type=password], button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 70svh;
+    margin-top: 10vh;
+}
+
+.cards-container {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    fill: var(--outer-bg-color);
+    z-index: 2;
+    position: absolute;
+}
+
+
+.card-0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-front-image {
+    fill: var(--inner-bg-color);
+    width: var(--inner-bg-width);
+    height: var(--inner-bg-height);
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=text], input[type=password], button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text-container {
+    color: #ffffff;
+    z-index: 3;
+    max-width: var(--inner-bg-width);
+    padding: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-container label {
+    display: block;
+    text-align: center;
+}
+
+.card-1 {
+    position: absolute;
+    top: -10%;
+    left: 75%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: scale(0.6);
+    /* Clip out the part of the card that is outside the container */
+    mix-blend-mode: multiply;
+}
+
+.card-1 svg {
+    fill: #747474;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding-bottom: 1.5em;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    height: 50svh;
+    z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+}

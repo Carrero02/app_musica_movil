@@ -1,0 +1,78 @@
+#header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 25% and 75% */
+}
+
+#container {
+    background-color: #000000;
+    color: white; /* Text color changed to white */
+    margin: 20px 0;
+    /*height must occupy all of the screen without overflowing*/
+    overflow-y: auto;
+    height: 76vh;
+}
+
+
+.playlist {
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid white;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    background-color: #000000;
+    padding-left: 10px;
+    
+}
+
+/*haz un hover de playlist con una animacion de hacerlo mas grande*/
+.playlist:hover {
+    background-color: #5c5b5b;
+    transform: translateX(-5px);
+}
+
+.playlist h2 {
+    margin: 10px;
+    font-size: 3vw;
+}
+.playlist p {
+    font-size: 2vw;
+    color: #ffffff;
+    text-align: center;
+}
+
+#menu-section {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #playlist-section, #menu-section {
+        flex: none;
+    }
+}
+
+.buttons button{
+    width: 20vw;
+    padding: 4vh;
+    background: none;    
+    border: none;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}

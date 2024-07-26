@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>Web app</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" type="text/css" href="/web/page/web.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+    </script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</html>
+<body>
+    <div id="header">
+        <h1>Playlist</h1>
+    </div>
+    <div id="main">
+        <div id="menu-section">
+            <div class = "buttons">
+            <button id="playlistButton">Playlist</button>
+            <button id="favoriteButton">Favoritos</button>
+            <button id="recomendacionButton">Recomendaciones</button>
+            </div>
+        </div>
+        <div id="container">
+        </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>Mobile app</title>
+    <link rel="stylesheet" type="text/css" href="/mobile/page/mobile.css">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</html>
+</head>
+
+<body>
+
+<button class="top-button" id="settingsBtn">
+    <svg class="button-svg" id="svgSettings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.08 140.09">
+        <path d="M79,1.07C76.41,0,73.12,0,66.54,0S56.68,0,54.08,1.07a14.08,14.08,0,0,0-7.64,7.58,17.21,17.21,0,0,0-1,6,11.28,11.28,0,0,1-5.57,9.47,11.5,11.5,0,0,1-11.06.06A17.35,17.35,0,0,0,23,22.07a14.18,14.18,0,0,0-10.44,2.78C10.35,26.54,8.71,29.37,5.42,35S.49,43.5.12,46.26a13.93,13.93,0,0,0,2.8,10.36,17.17,17.17,0,0,0,4.77,3.89,11,11,0,0,1,0,19.07,17.17,17.17,0,0,0-4.77,3.89A13.91,13.91,0,0,0,.12,93.82c.37,2.77,2,5.59,5.3,11.25s4.93,8.48,7.16,10.17A14.23,14.23,0,0,0,23,118a17.57,17.57,0,0,0,5.78-2.16,11.47,11.47,0,0,1,11.06.06,11.28,11.28,0,0,1,5.57,9.47,17.26,17.26,0,0,0,1,6A14.08,14.08,0,0,0,54.08,139c2.6,1.07,5.88,1.07,12.46,1.07s9.87,0,12.46-1.07a14.05,14.05,0,0,0,7.64-7.58,17.26,17.26,0,0,0,1-6,11.31,11.31,0,0,1,5.58-9.47,11.47,11.47,0,0,1,11.06-.06,17.72,17.72,0,0,0,5.78,2.16,14.22,14.22,0,0,0,10.43-2.78c2.23-1.7,3.87-4.52,7.16-10.17s4.94-8.48,5.3-11.25a13.94,13.94,0,0,0-2.79-10.35,17.23,17.23,0,0,0-4.78-3.89,11,11,0,0,1,0-19.07,17.23,17.23,0,0,0,4.78-3.89A13.92,13.92,0,0,0,133,46.26c-.36-2.76-2-5.59-5.3-11.24s-4.93-8.48-7.16-10.17a14.17,14.17,0,0,0-10.43-2.78,17.27,17.27,0,0,0-5.78,2.16,11.49,11.49,0,0,1-11.06-.06,11.32,11.32,0,0,1-5.58-9.48,17.2,17.2,0,0,0-1-6A14.05,14.05,0,0,0,79,1.07Zm-12.46,90A21,21,0,1,0,45.37,70,21.09,21.09,0,0,0,66.54,91.06Z"/>
+    </svg>
+</button>
+
+<div class="container">
+    
+    <div class="canvas">
+        <svg class="bg-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+            <path fill="#currentColor"
+                d="M1004,1202.53V11.09h0c-126.86-36-252,25.15-292.3,46.42-46.77,24.66-119.09,76.53-209.21,76.53-.16,0-.32,0-.48,0s-.32,0-.48,0c-90.12,0-162.44-51.87-209.21-76.53C252,36.25,126.87-24.86,0,11.1H0V1202.53c0,298.35,221.3,471.75,501.31,472.24h1.38C782.7,1674.28,1004,1500.88,1004,1202.53Z" />
+        </svg>
+
+        <div class="main-screen">
+            <!-- Favourites button -->
+            <button class="circle-button" id="favoritesBtn">
+                <svg class="button-svg" id="svgStar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.79 144.78">
+                    <path d="M144.32,54.55a9.05,9.05,0,0,0-7.22-6.07l-39-6L80.59,5.21a9.05,9.05,0,0,0-16.39,0L46.68,42.53l-39,5.95A9.06,9.06,0,0,0,2.57,63.75L31.05,93l-6.74,41.32a9.05,9.05,0,0,0,13.32,9.38L72.4,124.43l34.76,19.22a9.05,9.05,0,0,0,13.32-9.38L113.74,93l28.48-29.2A9.07,9.07,0,0,0,144.32,54.55Z"/>
+                </svg>
+            </button>
+            <!-- History button -->
+            <button class="circle-button" id="historyBtn">
+                <svg class="button-svg" id="svgHistory" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.52 167.58">
+                    <path class="cls-1" d="M25,104.81a2.55,2.55,0,0,0,4.1,0L53.47,75c1.13-1.39.6-2.51-1.19-2.51h-13a2.55,2.55,0,0,1-2.62-3.18,67.6,67.6,0,1,1,66,82.11,8.1,8.1,0,0,0,0,16.19A83.79,83.79,0,1,0,20.22,69.26a3.93,3.93,0,0,1-3.73,3.2H1.78C0,72.46-.54,73.58.59,75Z"/>
+                    <path class="cls-1" d="M118.11,119.76a51.93,51.93,0,0,1-8.54-.86v-28h-17v28a52.85,52.85,0,0,1-8.45.86,51.72,51.72,0,0,1-8.54-.86V50.35c1.72-.25,3.29-.45,4.7-.57s2.66-.2,3.74-.2,2.45.07,3.89.2,3,.32,4.66.57V75.79h17V50.35c1.73-.25,3.28-.45,4.66-.57s2.64-.2,3.79-.2,2.45.07,3.89.2,3,.32,4.65.57V118.9A52.85,52.85,0,0,1,118.11,119.76Z"/>
+                </svg>
+            </button>
+            <!-- Search song button -->
+            <button class="circle-button" id="searchSongBtn">
+                <svg class="button-svg" id="svgSearchSong" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 676.38 594.14">
+                    <path d="M273.55,387.25c10,18.79,43.28,20.64,74.4,4.13s48.59-45.31,38.28-63.92c-5.16-9.32-11.65-14.35-19-17.27-5.48-2.19-10.49-78.27-6.33-87.31,18.78,19.85,23.65,48,61.89,52.44-24.93-18-22.27-50.59-41.18-75.7-19.28-25.59-48.84-33.2-76.31-42.2,40.76,54,36,155.54,31.44,156.57a100.3,100.3,0,0,0-24.95,9.33C280.72,339.83,263.58,368.45,273.55,387.25Z"/>
+                    <path d="M451.39,222.8c34,46.49,34.3,93,7.37,148.54C505.25,336.76,508.09,254,451.39,222.8Z"/>
+                    <path d="M481.44,148.54c68,93,68.6,186,14.74,297.07C589.16,376.44,594.83,210.9,481.44,148.54Z"/>
+                    <path d="M506.79,0C642.85,186,644,371.91,536.27,594.14,722.22,455.81,733.56,124.72,506.79,0Z"/>
+                    <path d="M225,222.8c-34,46.49-34.3,93-7.37,148.54C171.13,336.76,168.29,254,225,222.8Z"/>
+                    <path d="M194.94,148.54c-68,93-68.6,186-14.74,297.07C87.22,376.44,81.55,210.9,194.94,148.54Z"/>
+                    <path d="M169.59,0C33.52,186,32.39,371.91,140.11,594.14-45.85,455.81-57.18,124.72,169.59,0Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="search-song-screen">
+            <svg class="bg-front-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+                <path fill="#currentColor"
+                    d="M1004,80.57C1004,33.33,993.36,0,917.36,0,812.29,0,712.19,57.52,712.19,57.52,665.42,82.18,593.1,134.06,503,134.06l-.48,0h0v0H502v0h0l-.48,0c-90.12,0-162.44-51.88-209.21-76.54,0,0-100.1-57.52-205.17-57.52C11.14,0,.5,33.33.5,80.57s-.5,1122-.5,1122c0,298.35,221.3,471.75,501.31,472.24h1.88c280-.49,501.31-173.89,501.31-472.24C1004.5,1202.53,1004,127.82,1004,80.57Z" />
+            </svg>
+            <div class="card-info-container">
+                <div class="song-found-container">
+                    <div class="song-found-title">Buscando la canción...</div>
+                    <div class="song-found-details">
+                        <div class="song-found-artist">&lrm;</div>   <!-- &lrm; is an invisible character -->
+                        <div class="song-found-duration">&lrm;</div> <!-- It is used to keep the song-found-details div height when adding text -->
+                    </div>
+                </div>
+                <div class="double-middle-button" id="doubleMiddleButtonSearch">
+                    <button class = "double-middle-button-left" id = "discardSong">
+                        <svg class="button-svg" id="svgDiscardSong" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.71 342.03">
+                            <defs>
+                                <style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:12px;}</style>
+                            </defs>
+                            <title>Asset 14</title>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_13" data-name="Layer 13">
+                                    <path class="cls-1" d="M82.61,286.6,67.44,211.5c-1.53-7.56-13.1-4.36-11.57,3.19L71,289.79c1.53,7.56,13.1,4.36,11.57-3.19Z"/>
+                                    <path class="cls-1" d="M117.08,289V212.27c0-7.72-12-7.73-12,0V289c0,7.72,12,7.73,12,0Z"/>
+                                    <path class="cls-1" d="M150.05,117.41c14.64,2,29.76,4.9,43.34,11,6,2.7,16.21,7.85,16.79,14.41.15,1.73-.76,3.71-2.32,5.56-2.52,3-6,5.15-9.35,7-10.44,5.72-22.36,8.76-34,11.08-31.22,6.26-64.58,6.64-96,1.91-13-1.95-26.19-4.72-38.32-9.83-6.16-2.6-15.12-6.93-17.67-12.86-.95-2.2-.82-4.21,1.13-6.92,2.71-3.77,7.11-6.31,11.14-8.42,14.34-7.51,31.11-10.62,47-12.86,7.62-1.07,4.38-12.64-3.19-11.57-16.47,2.32-33.2,5.86-48.23,13.25C11.34,123.56,1,130.82.06,141.75c-.78,9.36,6.14,16.59,13.35,21.44,10.77,7.24,24.05,11.09,36.58,13.89,35.74,8,74,8.25,110,2.34,14.28-2.35,28.68-5.85,41.72-12.25,8.13-4,17.3-10.12,19.81-19.4,3.19-11.75-6.42-21.08-15.67-26.47-15.81-9.19-34.77-13-52.65-15.46-3.24-.45-6.41.79-7.38,4.19-.81,2.8,1,6.94,4.19,7.38Z"/>
+                                    <path class="cls-1" d="M210.4,141.54l-16,79.06c-6,29.87-12.52,59.7-18.12,89.66a24.62,24.62,0,0,0-.45,3c-.73,2.37-4.3,4.93-7.45,6.6-13,6.89-29.08,8.79-43.51,9.72-17.84,1.15-36.15.41-53.6-3.68-6.17-1.45-12.42-3.23-18-6.28-3-1.65-6.29-4.1-7-6.36a21.3,21.3,0,0,0-.47-3.06c-.26-1.42-.57-2.84-.86-4.25l-3.39-16.79L30.7,235.28c-6.19-30.63-11.61-61.53-18.59-92-.13-.57-.23-1.16-.35-1.74C10.23,134-1.34,137.18.19,144.73L17,227.7c5.84,28.89,12.35,57.73,17.53,86.74-.29-1.63-.1.63.25,2A16.66,16.66,0,0,0,38,322.59c3.15,3.93,7.61,6.7,12.12,8.8,14.36,6.65,30.61,9,46.27,10.11a199,199,0,0,0,55.52-3.57c11-2.4,24.87-6.08,32.29-15.34a16.42,16.42,0,0,0,3.17-5.87,24.28,24.28,0,0,0,.4-2.62c-.15.91-.1.51-.06.31.17-1,.4-2,.6-3l3.06-15.16,10.8-53.45c6.48-32.08,13.22-64.12,19.45-96.26.12-.61.25-1.23.37-1.85,1.53-7.54-10-10.76-11.57-3.19Z"/>
+                                    <path class="cls-1" d="M151.12,289.79l15.17-75.1c1.53-7.54-10-10.77-11.57-3.19l-15.17,75.1c-1.53,7.54,10,10.77,11.57,3.19Z"/>
+                                    <path class="cls-1" d="M207.29,93.19c6.16,6.1,19.33,2.77,29.42-7.43s13.38-23.52,7.11-29.5a14.88,14.88,0,0,0-9.47-4.41c-2.39-.18-13.59-29.15-13.07-33.17,9.71,5.44,15,15.8,30.43,12.87-11.88-4-14.8-17-25.2-24.42-10.61-7.61-23-7-34.8-7.13C214.12,16,224.63,56.08,223,57a40.91,40.91,0,0,0-8.56,6.65C204.31,73.89,201.13,87.1,207.29,93.19Z"/>
+                                    <path id="primary" class="cls-2" d="M99.89,126.31l17.54-28.44c18-29.23,48.16-46.49,74.79-42.85"/>
+                                    <polyline id="primary-2" class="cls-2" points="92.94 96.95 99.89 126.31 129.26 119.35"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class = "double-middle-button-right" id = "addSong">
+                        <div>Guardar</div>
+                    </button>
+                </div>
+                <div class="loading-circle"></div>
+            </div>
+        </div>
+
+        <div class="add-remove-playlist-screen">
+            <svg class="bg-front-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+                <path fill="#currentColor"
+                    d="M1004,80.57C1004,33.33,993.36,0,917.36,0,812.29,0,712.19,57.52,712.19,57.52,665.42,82.18,593.1,134.06,503,134.06l-.48,0h0v0H502v0h0l-.48,0c-90.12,0-162.44-51.88-209.21-76.54,0,0-100.1-57.52-205.17-57.52C11.14,0,.5,33.33.5,80.57s-.5,1122-.5,1122c0,298.35,221.3,471.75,501.31,472.24h1.88c280-.49,501.31-173.89,501.31-472.24C1004.5,1202.53,1004,127.82,1004,80.57Z" />
+            </svg>
+            <div class="card-info-container">
+                <div class="top-text-container">
+                    <div class="top-text-header">Eliminar / añadir</div>
+                    <div class="top-text-subheader">Playlist</div>
+                    <input type="text" id="addPlaylistName" placeholder="Nombre de la playlist">
+                </div>
+                <div class="double-middle-button" id="doubleMiddleButtonAddRemove">
+                    <button class = "double-middle-button-left" id = "removePlaylist">
+                        <div>-</div>
+                    </button>
+                    <button class = "double-middle-button-right" id = "addPlaylist">
+                        <div>+</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-screen">
+            <svg class="bg-front-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+                <path fill="#currentColor"
+                    d="M1004,80.57C1004,33.33,993.36,0,917.36,0,812.29,0,712.19,57.52,712.19,57.52,665.42,82.18,593.1,134.06,503,134.06l-.48,0h0v0H502v0h0l-.48,0c-90.12,0-162.44-51.88-209.21-76.54,0,0-100.1-57.52-205.17-57.52C11.14,0,.5,33.33.5,80.57s-.5,1122-.5,1122c0,298.35,221.3,471.75,501.31,472.24h1.88c280-.49,501.31-173.89,501.31-472.24C1004.5,1202.53,1004,127.82,1004,80.57Z" />
+            </svg>
+            <div class="card-info-container">
+                <div class="settings-container">
+                    <div class="top-text-container">
+                        <div class="top-text-header">Ajustes</div>
+                    </div>
+                    <!-- Checkbox for disabling vibration -->
+                    <label class="checkbox-container">
+                        Desactivar vibración
+                        <input type="checkbox" id="disableVibration" name="disableVibration">
+                        <span class="checkmark"></span>
+                    </label>
+                    <!-- Checkbox for disabling movement interactions -->
+                    <label class="checkbox-container">
+                        Desactivar controles por movimiento
+                        <input type="checkbox" id="disableMovement" name="disableMovement">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="card not-focused spacer" id="card-first-spacer" >
+                <svg class="bg-front-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+                    <path fill="#currentColor"
+                        d="M1004,80.57C1004,33.33,993.36,0,917.36,0,812.29,0,712.19,57.52,712.19,57.52,665.42,82.18,593.1,134.06,503,134.06l-.48,0h0v0H502v0h0l-.48,0c-90.12,0-162.44-51.88-209.21-76.54,0,0-100.1-57.52-205.17-57.52C11.14,0,.5,33.33.5,80.57s-.5,1122-.5,1122c0,298.35,221.3,471.75,501.31,472.24h1.88c280-.49,501.31-173.89,501.31-472.24C1004.5,1202.53,1004,127.82,1004,80.57Z" />
+                </svg>
+            </div>
+            <div class="card not-focused spacer" id="card-last-spacer" >
+                <svg class="bg-front-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 1674.78" preserveAspectRatio="none">
+                    <path fill="#currentColor"
+                        d="M1004,80.57C1004,33.33,993.36,0,917.36,0,812.29,0,712.19,57.52,712.19,57.52,665.42,82.18,593.1,134.06,503,134.06l-.48,0h0v0H502v0h0l-.48,0c-90.12,0-162.44-51.88-209.21-76.54,0,0-100.1-57.52-205.17-57.52C11.14,0,.5,33.33.5,80.57s-.5,1122-.5,1122c0,298.35,221.3,471.75,501.31,472.24h1.88c280-.49,501.31-173.89,501.31-472.24C1004.5,1202.53,1004,127.82,1004,80.57Z" />
+                </svg>
+            </div>
+        </div>
+
+</div>
+
+<button class="bottom-button" id="playlistsBtn">
+    <div>Playlists</div>
+</button>
+
+<div class="double-bottom-button">
+    <button class = "double-bottom-button-left" id = "back">
+        <div>Atrás</div>
+    </button>
+    <button class = "double-bottom-button-right" id = "addRemovePlaylist">
+        <div>± Playlist</div>
+    </button>
+</div>
+
+
+</body>
+</html>
